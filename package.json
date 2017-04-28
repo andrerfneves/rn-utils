@@ -1,0 +1,17 @@
+{
+  "name": "rn-utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react-native": "0.43.3"
+  },
+  "author": "André Neves <@andrerfneves>",
+  "license": "MIT",
+  "dependencies": {
+    "react-native-orientation": "git+https://github.com/yamill/react-native-orientation.git"
+  }
+}
