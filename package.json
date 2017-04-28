@@ -1,6 +1,6 @@
 {
   "name": "rn-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React Native Utilities",
   "main": "index.js",
   "scripts": {
