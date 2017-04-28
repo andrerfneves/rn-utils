@@ -1,2 +1,4 @@
 require('babel-register');
-require('./src/index');
+
+const RNUtils = require('./src/index');
+export default RNUtils;

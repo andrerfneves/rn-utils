@@ -8,7 +8,7 @@ import {
   unlockOrientations,
 } from './lib/orientation';
 
-export default {
+export {
   // Orientation
   addOrientationListener,
   getOrientation,

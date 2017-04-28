@@ -17,7 +17,7 @@ npm install rn-utils
 | getDeviceWidth | `RNUtils.getDeviceWidth()` | Returns the device's current viewport width. |
 
 #### Orientation
-*Currently the only 3rd party package used by React Native Utilities is the [React Native Orientation](https://github.com/yamill/react-native-orientation) module. If you wish to use any of the Orientation functionalities of React Native Utils, remember to link its native dependencies.*
+*Currently the only 3rd party package with native dependecies used by React Native Utilities is the [React Native Orientation](https://github.com/yamill/react-native-orientation) module. If you wish to use any of the Orientation functionalities of React Native Utils, remember to link its native dependencies.*
 ```
 react-native link react-native-orientation
 ```
