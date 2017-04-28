@@ -1,17 +1,23 @@
 {
   "name": "rn-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Native Utilities",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "André Neves <andre.r.f.neves@gmail.com> (https://github.com/andrerfneves)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andrerfneves/rn-utils.git"
+  },
   "peerDependencies": {
     "react-native": "0.43.3",
+  },
+  "dependencies": {
     "react-native-orientation": "git+https://github.com/yamill/react-native-orientation.git"
   },
-  "author": "André Neves <@andrerfneves>",
-  "license": "MIT",
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",

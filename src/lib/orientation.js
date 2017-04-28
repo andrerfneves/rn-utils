@@ -1,5 +1,7 @@
 import Orientation from 'react-native-orientation';
-import { LANDSCAPE, PORTRAIT } from '../constants/orientation';
+
+const PORTRAIT = 'PORTRAIT';
+const LANDSCAPE = 'LANDSCAPE';
 
 export const lockPortrait = () => Orientation.lockToPortrait();
 export const lockLandscape = () => Orientation.lockToLandscape();
@@ -9,7 +11,7 @@ export const isLandscape = (orientation) => LANDSCAPE === orientation.toUpperCas
 
 export const getOrientation = () => {
   return Orientation.getInitialOrientation((err, orientation) => {
-    if (err) console.log(`Error on Orientation fetching: ${error}`); // eslint-disable-line
+    if (err) console.log(`Error on Orientation fetching: ${error}`);
     if (orientation !== LANDSCAPE || orientation !== PORTRAIT) return PORTRAIT;
     return orientation;
   });
