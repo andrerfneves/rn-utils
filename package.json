@@ -13,7 +13,7 @@
     "url": "git@github.com:andrerfneves/rn-utils.git"
   },
   "peerDependencies": {
-    "react-native": "0.43.3",
+    "react-native": "0.43.3"
   },
   "dependencies": {
     "react-native-orientation": "git+https://github.com/yamill/react-native-orientation.git"
