@@ -1,4 +1,5 @@
 # React Native Utils
+[![npm version](https://badge.fury.io/js/rn-utils.svg)](https://badge.fury.io/js/rn-utils)
 
 React Native Utilities is a package born out of the incessant rewriting of utility functions while developing scalable and maintainable React Native applications. It aims to be a repository that holds trivial yet useful utility functions that are most times copied over/recreated in every new React Native project.
 
