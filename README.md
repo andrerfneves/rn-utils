@@ -5,7 +5,7 @@ React Native Utilities is a package born out of the incessant rewriting of utili
 
 ## Installation
 ```
-npm install rn-utils
+npm install rn-utils --save
 ```
 
 ## Utilities
