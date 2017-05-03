@@ -64,10 +64,7 @@ export default class TextHelpers {
       this.handleError(`Size ${size} is not a supported font size`);
     }
 
-    return {
-      fontSize,
-      lineHeight
-    }
+    return fontSize;
   }
 
   /**
