@@ -31,7 +31,7 @@ react-native link react-native-orientation
 | lockPortrait | `RNUtils.lockPortrait()` | Locks the device's viewport to the Portrait mode. Disables landscape. |
 | unlockOrientations | `RNUtils.unlockOrientations()` | Unlocks any previous locking behavior applied by `lockPortrait` or `lockLandscape`. |
 
-### Dimensions
+### Text Helpers
 
 |  Function | Usage | Utility |
 |-----------|-------|---------|
