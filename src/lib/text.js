@@ -35,7 +35,6 @@ export default class TextHelpers {
    * @return {object}
   */
   getFontSize(size) {
-
     if (typeof size !== 'string') {
       this.handleError('Passed size argument must be a string');
     }
