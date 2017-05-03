@@ -35,9 +35,9 @@ react-native link react-native-orientation
 
 |  Function | Usage | Utility |
 |-----------|-------|---------|
-| getFontSize | textHelpers.getFontSize(size) | Returns a font size baed on size argument |
-| getLineHeight | textHelpers.getLineHeight(size) | Returns a line height based on size argument |
-| getFontStyles | textHelpers.getFontStyles(size) | Returns an object with a font size and line height based on size argument |
+| getFontSize | `textHelpers.getFontSize(size)` | Returns a font size baed on size argument |
+| getLineHeight | `textHelpers.getLineHeight(size)` | Returns a line height based on size argument |
+| getFontStyles | `textHelpers.getFontStyles(size)` | Returns an object with a font size and line height based on size argument |
 
 **Example Usage**
 
