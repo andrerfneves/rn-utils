@@ -47,7 +47,7 @@ import TextHelpers from 'rn-utils'
 const fontSizes = {small: 8, medium: 12};
 const lineHeights = {small: 12, medium: 16};
 
-const textHelpers = new TextHelpers(fintSizes, lineHeights);
+const textHelpers = new TextHelpers(fontSizes, lineHeights);
 
 const fontStyles = {
   ...textHelpers.getFontStyles('small');
