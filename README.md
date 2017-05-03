@@ -31,10 +31,33 @@ react-native link react-native-orientation
 | lockPortrait | `RNUtils.lockPortrait()` | Locks the device's viewport to the Portrait mode. Disables landscape. |
 | unlockOrientations | `RNUtils.unlockOrientations()` | Unlocks any previous locking behavior applied by `lockPortrait` or `lockLandscape`. |
 
+### Text Helpers
+
+|  Function | Usage | Utility |
+|-----------|-------|---------|
+| getFontSize | `textHelpers.getFontSize(size)` | Returns a font size based on size argument |
+| getLineHeight | `textHelpers.getLineHeight(size)` | Returns a line height based on size argument |
+| getFontStyles | `textHelpers.getFontStyles(size)` | Returns an object with a font size and line height based on size argument |
+
+**Example Usage**
+
+```
+import TextHelpers from 'rn-utils'
+
+const fontSizes = {small: 8, medium: 12};
+const lineHeights = {small: 12, medium: 16};
+
+const textHelpers = new TextHelpers(fontSizes, lineHeights);
+
+const fontStyles = {
+  ...textHelpers.getFontStyles('small');
+}
+```
+
 ## Roadmap
 The aim for this package is to introduce an ever growing list of React Native utilities that can be used when developing real-world scalable applications. With that in mind, below is the list of items I'd like to tackle next. These could be full rewrites of utilities or extracting it from current React Native projects.
 
-- [ ] Font Sizes / Line Heights
+- [x] Font Sizes / Line Heights
 - [ ] Legacy Operating Systems
 - [ ] Themes (?)
 - [ ] Animations (?)

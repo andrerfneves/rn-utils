@@ -7,6 +7,7 @@ import {
   lockPortrait,
   unlockOrientations,
 } from './lib/orientation';
+import TextHelpers from './text';
 
 export {
   // Orientation
@@ -20,4 +21,7 @@ export {
   // Dimensions
   getDeviceHeight,
   getDeviceWidth,
+
+  // Text
+  TextHelpers
 };
