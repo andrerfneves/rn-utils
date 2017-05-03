@@ -69,7 +69,7 @@ export default class TextHelpers {
 
   /**
    * @name getFontStyles
-   * @summary - Method for returning object containing font size and
+   * @summary - Method for returning object containing a font size and
    * line height dependent on passed size argument
    * @param {string} size - desired size of the font and line height
    * @return {object}
