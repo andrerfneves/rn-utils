@@ -28,9 +28,28 @@ export default class TextHelpers {
   }
 
   /**
+   * @name getLineHeight
+   * @summary - Method for returning a line height dependent on passed size argument
+   * @param {string} size - desired size of the font and line height
+   * @return {object}
+  */
+  getLineHeight(size) {
+    if (typeof size !== 'string') {
+      this.handleError('Passed size argument must be a string');
+    }
+
+    const lineHeight = this._lineHeights[size];
+
+    if (!lineHeight) {
+      this.handleError(`Size ${size} is not a supported line height`);
+    }
+
+    return lineHeight;
+  }
+
+  /**
    * @name getFontSize
-   * @summary - Method for returning object containing font size and
-   * line height dependent on passed size argument
+   * @summary - Method for returning a font size dependent on passed size argument
    * @param {string} size - desired size of the font and line height
    * @return {object}
   */
@@ -40,19 +59,28 @@ export default class TextHelpers {
     }
 
     const fontSize = this._fontSizes[size];
-    const lineHeight = this._lineHeights[size];
 
     if (!fontSize) {
       this.handleError(`Size ${size} is not a supported font size`);
     }
 
-    if (!lineHeight) {
-      this.handleError(`Size ${size} is not a supported line height`);
-    }
-
     return {
       fontSize,
       lineHeight
+    }
+  }
+
+  /**
+   * @name getFontStyles
+   * @summary - Method for returning object containing font size and
+   * line height dependent on passed size argument
+   * @param {string} size - desired size of the font and line height
+   * @return {object}
+  */
+  getFontStyles(size) {
+    return {
+      fontSize: this.getFontSize(size),
+      lineHeight: this.getLineHeight(size)
     }
   }
 }
